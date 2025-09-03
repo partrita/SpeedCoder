@@ -6,7 +6,7 @@ on:
     branches: [main]
 
 env:
-  DOCKER_IMAGE: wlsdud5654/speed-coder
+  DOCKER_IMAGE: partrita/speed-coder
   NAME: coder
 
 jobs:
