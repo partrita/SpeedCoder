@@ -1,4 +1,17 @@
 const getFilecontents = (filename) => {
+  const customTemplates =
+    JSON.parse(localStorage.getItem("customTemplates")) || [];
+  const customTemplate = customTemplates.find(
+    (template) => template.filename === filename
+  );
+
+  if (customTemplate) {
+    return {
+      content: customTemplate.content,
+      colormap: "",
+    };
+  }
+
   switch (filename) {
     case "ex.py":
       return {
@@ -2207,6 +2220,19 @@ int main() {
           "\n",
           "}",
         ],
+        colormap: "",
+      };
+    case "new_template.js":
+      return {
+        content: `const debounce = (func, delay) => {
+  let timeoutId;
+  return (...args) => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => {
+      func.apply(this, args);
+    }, delay);
+  };
+};`.split(""),
         colormap: "",
       };
     default:

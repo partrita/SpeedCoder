@@ -10,6 +10,7 @@ export default function Editor({
   section,
   daynight,
   finishTrigger,
+  fontSize,
 }) {
   const [userInput, setUserInput] = useState("");
   const [fileForCompare, setFileForCompare] = useState();
@@ -170,6 +171,7 @@ export default function Editor({
         file={file}
         setFileLength={setFileLength}
         daynight={daynight}
+        fontSize={fontSize}
       />
     </div>
   ) : (

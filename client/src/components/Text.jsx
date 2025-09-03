@@ -6,7 +6,7 @@ import { setSpacechr } from "../redux/space/actions";
 import getFilecontents from "../utils/filecontents";
 import AutoCompletion from "./AutoCompletion";
 
-function Text(props) {
+function Text({ fontSize, ...props }) {
   //const colormap = file.colormap
   const [textSplit, setTextSplit] = useState([]);
   const [themeColor, setThemeColor] = useState("");
@@ -86,6 +86,7 @@ function Text(props) {
               display: "inline",
               backgroundColor: color,
               color: colortxt,
+              fontSize: `${fontSize}px`,
             }}
           >
             {user.length === i ? <div className="cursor">│</div> : ""}

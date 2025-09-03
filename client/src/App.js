@@ -27,6 +27,9 @@ function App() {
     Math.min(window.innerWidth / 1400, window.innerHeight / 900)
   );
   const [counterValue, setCounterValue] = useState(0);
+  const [fontSize, setFontSize] = useState(
+    localStorage.getItem("fontSize") || 20
+  );
 
   useEffect(() => {
     // fetchCounterValue();
@@ -140,6 +143,8 @@ function App() {
               fileLength={fileLength}
               setFinishTrigger={setFinishTrigger}
               daynight={daynight}
+              fontSize={fontSize}
+              setFontSize={setFontSize}
             />
 
             <ul>
@@ -154,6 +159,7 @@ function App() {
                   section={section}
                   daynight={daynight}
                   finishTrigger={finishTrigger}
+                  fontSize={fontSize}
                 />
               </li>
             </ul>

@@ -55,6 +55,15 @@ export default function SidebarButton(props) {
           <span className="material-icons">scoreboard</span>
         </li>
         <li
+          className={"iconwrapper" + (menustate === "3" ? "active" : "")}
+          onClick={() => {
+            setmenustate("3");
+            props.setSection("3");
+          }}
+        >
+          <span className="material-icons">settings</span>
+        </li>
+        <li
           className="iconwrapper"
           id="onlymargin"
           onClick={() => {
