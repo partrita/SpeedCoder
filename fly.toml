@@ -1,0 +1,20 @@
+app = "앱_이름"               # 앱 이름(고유값)
+primary_region = "nrt"        # 배포 리전(예: nrt=도쿄, syd=시드니 등)
+
+[build]
+image = "partrita/speed-coder:latest"  # 사용할 Docker 이미지명
+
+[env]
+# 환경변수가 필요할 때 추가 (Secrets로 관리 추천)
+
+[[services]]
+internal_port = 80             # 컨테이너 내부 포트
+protocol = "tcp"
+
+  [[services.ports]]
+  handlers = ["http"]
+  port = 80
+
+  [[services.ports]]
+  handlers = ["tls", "http"]
+  port = 443
