@@ -1,4 +1,4 @@
-app = "앱_이름"               # 앱 이름(고유값)
+app = "proud-snow-3360"               # 앱 이름(고유값)
 primary_region = "nrt"        # 배포 리전(예: nrt=도쿄, syd=시드니 등)
 
 [build]
