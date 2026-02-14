@@ -43,3 +43,9 @@ yarn-error.log*
 
 # log
 server/logs/*
+# IDE and cache
+.idea/
+.npm-cache/
+node_modules/
+dist/
+build/
