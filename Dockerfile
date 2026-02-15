@@ -1,8 +1,8 @@
 FROM node:18
 WORKDIR /app
 
-ENV NODE_ENV production
-ENV PORT 80
+ENV NODE_ENV=production
+ENV PORT=80
 
 COPY server/     .
 
