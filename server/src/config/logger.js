@@ -52,10 +52,9 @@ const logger = createLogger({
     transports: [opts.fileInfo, opts.fileError]
 });
 
-if (process.env.NODE_ENV !== "production") {
-    // only dev
-    logger.add(opts.console);
-}
+// Always add console transport in Render/Production to see logs in platform dashboards
+logger.add(opts.console);
+
 
 logger.stream = {
     write: (message) => logger.info(message.slice(0, -1)),
