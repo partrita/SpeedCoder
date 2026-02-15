@@ -1,11 +1,12 @@
 "use strict";
 
+const path = require("path");
 const Counter = require("../../model/Counter");
 const Record = require("../../model/Record");
 
 const output = {
   main: (req, res) => {
-    res.status(200).sendfile("../../views/index.html");
+    res.sendFile(path.join(__dirname, "../../views/index.html"));
   },
 };
 
