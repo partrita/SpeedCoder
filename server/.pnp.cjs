@@ -38,7 +38,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["dotenv", "npm:16.0.1"],\
             ["express", "npm:4.18.1"],\
             ["mongodb", "npm:4.8.1"],\
-            ["morgan", "npm:1.10.0"],\
+            ["morgan", "npm:1.11.0"],\
             ["nodemon", "npm:2.0.19"],\
             ["winston", "npm:3.8.1"],\
             ["winston-daily-rotate-file", "virtual:5b56e75283fa6501569a941bded99f7c617d8fc00af56e4cf13ace2323f06de282543c6cec1f8cf5063e9b6938f56eb354216000d6f61fed16af4056dc4169f9#npm:4.7.1"]\
@@ -1744,15 +1744,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["morgan", [\
-        ["npm:1.10.0", {\
-          "packageLocation": "./.yarn/cache/morgan-npm-1.10.0-a0da109b6b-fb41e226ab.zip/node_modules/morgan/",\
+        ["npm:1.11.0", {\
+          "packageLocation": "./.yarn/cache/morgan-npm-1.11.0-348cdbbc68-8d3b8f3a5a.zip/node_modules/morgan/",\
           "packageDependencies": [\
-            ["morgan", "npm:1.10.0"],\
+            ["morgan", "npm:1.11.0"],\
             ["basic-auth", "npm:2.0.1"],\
             ["debug", "virtual:a15a361cfc28b5ba5ad8421b3b52f3b4099ab9bae0c4c57a99ed4264788ffa7ed590d6d8153f435f1219020ae61054eefe8b8a095411c21b19a93a0eaf9558fb#npm:2.6.9"],\
             ["depd", "npm:2.0.0"],\
-            ["on-finished", "npm:2.3.0"],\
-            ["on-headers", "npm:1.0.2"]\
+            ["on-finished", "npm:2.4.1"],\
+            ["on-headers", "npm:1.1.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -1902,14 +1902,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["on-finished", [\
-        ["npm:2.3.0", {\
-          "packageLocation": "./.yarn/cache/on-finished-npm-2.3.0-4ce92f72c6-1db595bd96.zip/node_modules/on-finished/",\
-          "packageDependencies": [\
-            ["on-finished", "npm:2.3.0"],\
-            ["ee-first", "npm:1.1.1"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
         ["npm:2.4.1", {\
           "packageLocation": "./.yarn/cache/on-finished-npm-2.4.1-907af70f88-d20929a25e.zip/node_modules/on-finished/",\
           "packageDependencies": [\
@@ -1920,10 +1912,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["on-headers", [\
-        ["npm:1.0.2", {\
-          "packageLocation": "./.yarn/cache/on-headers-npm-1.0.2-e7cd3ea25e-2bf1346721.zip/node_modules/on-headers/",\
+        ["npm:1.1.0", {\
+          "packageLocation": "./.yarn/cache/on-headers-npm-1.1.0-7d18779060-98aa64629f.zip/node_modules/on-headers/",\
           "packageDependencies": [\
-            ["on-headers", "npm:1.0.2"]\
+            ["on-headers", "npm:1.1.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -2413,7 +2405,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["dotenv", "npm:16.0.1"],\
             ["express", "npm:4.18.1"],\
             ["mongodb", "npm:4.8.1"],\
-            ["morgan", "npm:1.10.0"],\
+            ["morgan", "npm:1.11.0"],\
             ["nodemon", "npm:2.0.19"],\
             ["winston", "npm:3.8.1"],\
             ["winston-daily-rotate-file", "virtual:5b56e75283fa6501569a941bded99f7c617d8fc00af56e4cf13ace2323f06de282543c6cec1f8cf5063e9b6938f56eb354216000d6f61fed16af4056dc4169f9#npm:4.7.1"]\
